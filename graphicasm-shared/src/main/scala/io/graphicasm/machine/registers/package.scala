@@ -20,4 +20,8 @@ package object registers {
   val SP = R13
   val LR = R14
   val PC = R15
+
+  object Conversions {
+    implicit def RegisterToLong(register: Register): Long = register.value
+  }
 }
