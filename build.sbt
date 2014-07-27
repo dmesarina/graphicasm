@@ -18,7 +18,8 @@ lazy val graphicasmJS = project.in(file("graphicasm-js")).
       (baseDirectory in root).value / "graphicasm-shared" / "src" / "main" / "scala",
     unmanagedSourceDirectories in Test +=
       (baseDirectory in root).value / "graphicasm-shared" / "src" / "test" / "scala"
-  )
+  ).
+  dependsOn(graphicasmMacro)
 
 lazy val graphicasmJVM = project.in(file("graphicasm-jvm")).
   settings(commonSettings: _*).
@@ -28,4 +29,12 @@ lazy val graphicasmJVM = project.in(file("graphicasm-jvm")).
       (baseDirectory in root).value / "graphicasm-shared" / "src" / "main" / "scala",
     unmanagedSourceDirectories in Test +=
       (baseDirectory in root).value / "graphicasm-shared" / "src" / "test" / "scala"
+  ).
+  dependsOn(graphicasmMacro)
+
+lazy val graphicasmMacro = project.in(file("graphicasm-macro")).
+  settings(commonSettings: _*).
+  settings(
+    name := "macro",
+    libraryDependencies += "org.scala-lang" % "scala-reflect" % scalaVersion.value
   )
