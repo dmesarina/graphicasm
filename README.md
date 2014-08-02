@@ -1,4 +1,4 @@
-# Graphic Asm, an educative ARM®-like simulator that runs on the browser
+# Graphic Asm, an educational ARM®-like simulator that runs on the browser
 
 Graphic Asm compiles ARM® assembly to JavaScript and simulates an ARM® Cortex®-M0-like processor in the browser.
 
