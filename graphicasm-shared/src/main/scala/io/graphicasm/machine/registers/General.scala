@@ -31,62 +31,62 @@ trait LowRegister extends GeneralRegister
  */
 trait HighRegister extends GeneralRegister
 
-object R1 extends LowRegister {
+case object R1 extends LowRegister {
   val value = 1
 }
 
-object R2 extends LowRegister {
+case object R2 extends LowRegister {
   val value = 2
 }
 
-object R3 extends LowRegister {
+case object R3 extends LowRegister {
   val value = 3
 }
 
-object R4 extends LowRegister {
+case object R4 extends LowRegister {
   val value = 4
 }
 
-object R5 extends LowRegister {
+case object R5 extends LowRegister {
   val value = 5
 }
 
-object R6 extends LowRegister {
+case object R6 extends LowRegister {
   val value = 6
 }
 
-object R7 extends LowRegister {
+case object R7 extends LowRegister {
   val value = 7
 }
 
-object R8 extends HighRegister {
+case object R8 extends HighRegister {
   val value = 8
 }
 
-object R9 extends HighRegister {
+case object R9 extends HighRegister {
   val value = 9
 }
 
-object R10 extends HighRegister {
+case object R10 extends HighRegister {
   val value = 10
 }
 
-object R11 extends HighRegister {
+case object R11 extends HighRegister {
   val value = 11
 }
 
-object R12 extends HighRegister {
+case object R12 extends HighRegister {
   val value = 12
 }
 
-object R13 extends HighRegister {
+case object R13 extends HighRegister {
   val value = 13
 }
 
-object R14 extends HighRegister {
+case object R14 extends HighRegister {
   val value = 14
 }
 
-object R15 extends HighRegister {
+case object R15 extends HighRegister {
   val value = 15
 }

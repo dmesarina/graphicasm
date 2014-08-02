@@ -20,3 +20,5 @@ package io.graphicasm.machine.instructions
  * Parent of all 32 bit assembler instructions.
  */
 trait Instruction32 extends Instruction
+
+case class BL(label: Either[String, Imm11]) extends Instruction32

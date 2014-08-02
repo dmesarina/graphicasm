@@ -24,76 +24,76 @@ trait SpecialRegister extends Register
 /**
  * The flags from previous instructions. System value 0.
  */
-object APSR extends SpecialRegister {
+case object APSR extends SpecialRegister {
   val value = 0
 }
 
 /**
  * A composite from IPSR and APSR. System value 1.
  */
-object IAPSR extends SpecialRegister {
+case object IAPSR extends SpecialRegister {
   val value = 1
 }
 
 /**
  * A composite from EPSR and APSR. System value 2.
  */
-object EAPSR extends SpecialRegister {
+case object EAPSR extends SpecialRegister {
   val value = 2
 }
 
 /**
  * A composite of all three PSR registers. System value 3.
  */
-object XPSR extends SpecialRegister {
+case object XPSR extends SpecialRegister {
   val value = 3
 }
 
 /**
  * The Interrupt status register. System value 5.
  */
-object IPSR extends SpecialRegister {
+case object IPSR extends SpecialRegister {
   val value = 5
 }
 
 /**
  * The execution status register. System value 6.
  */
-object EPSR extends SpecialRegister {
+case object EPSR extends SpecialRegister {
   val value = 6
 }
 
 /**
  * A composite from IPSR and EPSR. System value 7.
  */
-object IEPSR extends SpecialRegister {
+case object IEPSR extends SpecialRegister {
   val value = 7
 }
 
 /**
  * The Main Stack pointer. System value 8.
  */
-object MSP extends SpecialRegister {
+case object MSP extends SpecialRegister {
   val value = 8
 }
 
 /**
  * The Process Stack pointer. System value 9.
  */
-object PSP extends SpecialRegister {
+case object PSP extends SpecialRegister {
   val value = 9
 }
 
 /**
  * Register to mask out configurable exceptions. System value 16.
  */
-object PRIMASK extends SpecialRegister {
+case object PRIMASK extends SpecialRegister {
   val value = 16
 }
 
 /**
  * The CONTROL register. System value 20.
  */
-object CONTROL extends SpecialRegister {
+case object CONTROL extends SpecialRegister {
   val value = 20
 }
